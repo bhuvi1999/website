@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhuvaneshwari Rajendran - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Bhuvaneshwari Rajendran</h1>
+            <nav class="top-nav">
+                <a href="Week_2.html" target="_blank">Week 2</a>
+            </nav>
+        </header>
+
+        <!-- Tabs Navigation -->
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'contact')">Contact</button>
+            <button class="tab-button" onclick="openTab(event, 'address')">Address</button>
+            <button class="tab-button" onclick="openTab(event, 'summary')">Summary</button>
+            <button class="tab-button" onclick="openTab(event, 'skills')">Skills</button>
+            <button class="tab-button" onclick="openTab(event, 'education')">Education</button>
+            <button class="tab-button" onclick="openTab(event, 'experience')">Experience</button>
+            <button class="tab-button" onclick="openTab(event, 'certifications')">Certifications</button>
+            <button class="tab-button" onclick="openTab(event, 'projects')">Projects</button>
+            <button class="tab-button" onclick="openTab(event, 'about')">About Me</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="contact" class="tab-content active">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:rkbhuvaneshwari.r@gmail.com">rkbhuvaneshwari.r@gmail.com</a></p>
+            <p>Phone: +1 (825) 935-0922</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/bhuvaneshwarirajendran" target="_blank">bhuvaneshwarirajendran</a></p>
+        </div>
+
+        <div id="address" class="tab-content">
+            <h2>Address</h2>
+            <p>276 Whitefield Drive Northeast</p>
+            <p>Calgary, AB, T1Y 5J3</p>
+            <p>Canada</p>
+        </div>
+
+        <div id="summary" class="tab-content">
+            <h2>Professional Summary</h2>
+            <p>IT professional and cybersecurity student at Bow Valley College with hands-on experience in vulnerability management, threat analysis, and endpoint security. Actively contributing to projects like Resilient Hearts and enterprise security solutions. Passionate about safeguarding systems through innovative and effective security strategies.</p>
+        </div>
+
+        <div id="skills" class="tab-content">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> C#, C++, Java, SQL, HTML, CSS, LaTeX, SAS</li>
+                <li><strong>Tools & Frameworks:</strong> .NET Frameworks, ASP.NET, ASP.NET Core, Apache Maven, Cisco Packet Tracer, OpenSSL</li>
+                <li><strong>Servers:</strong> MySQL, Apache, Microsoft IIS, Microsoft SQL Server</li>
+                <li><strong>Operating Systems:</strong> Linux (Ubuntu, CentOS), macOS, Unix, Windows Server</li>
+                <li><strong>Penetration & Cybersecurity Tools:</strong> Wireshark, SQLMap, Kali Linux</li>
+                <li><strong>Social Skills:</strong> Strong communication, decision-making, relationship building</li>
+            </ul>
+        </div>
+
+        <div id="education" class="tab-content">
+            <h2>Education</h2>
+            <div class="edu-item">
+                <h3>Post-Graduate Diploma in Cybersecurity</h3>
+                <p>Bow Valley College, Calgary, AB | Sep 2024 - May 2025</p>
+                <p>Current GPA: 3.95</p>
+            </div>
+            <div class="edu-item">
+                <h3>Master's in Computer Applications</h3>
+                <p>PSNA College of Engineering and Technology, Dindigul, India | Aug 2019 - Jun 2021</p>
+            </div>
+        </div>
+
+        <div id="experience" class="tab-content">
+            <h2>Professional Experience</h2>
+            <div class="exp-item">
+                <h3>Trainee Engineer - Software Development</h3>
+                <p>CTC Groups - Eleviant Tech, Chennai, India | May 2022 - Nov 2022</p>
+                <ul>
+                    <li>Designed and developed web forms using ASP.NET and C# to optimize user interface and performance.</li>
+                    <li>Managed database elements in Microsoft SQL Server using Entity Framework with a code-first approach.</li>
+                    <li>Collaborated on integrating user interfaces and web pages to ensure system performance.</li>
+                </ul>
+            </div>
+            <div class="exp-item">
+                <h3>Software Application Developer</h3>
+                <p>Tata Consultancy Services, Bangalore, India | Jun 2021 - Apr 2022</p>
+                <ul>
+                    <li>Participated in data migration for Deutsche Bank, developing code using SAS, JCL, and Mainframes.</li>
+                    <li>Integrated business requirements into system designs and collaborated with cross-functional teams.</li>
+                    <li>Transformed data into SAS format for FATCA and CRS regulatory reports using Data Warehousing.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="certifications" class="tab-content">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Course on PHP - SSI Education, Madurai, India</li>
+                <li>Cybersecurity Roles, Processes, and Operating System Security - Coursera</li>
+                <li>ISO/IEC 27001:2022 Certification - Udemy</li>
+                <li>Learning Security Frameworks</li>
+                <li>CompTIA Security+ (In Progress)</li>
+            </ul>
+        </div>
+
+        <div id="projects" class="tab-content">
+            <h2>Capstone Project</h2>
+            <h3>Resilient Hearts</h3>
+            <p>Developed and implemented cybersecurity measures for a community-driven initiative focused on resilience and data protection.</p>
+        </div>
+
+        <div id="about" class="tab-content">
+            <h2>About Me</h2>
+            <p>Hello! I’m a motivated software developer and cybersecurity student from Ramanathapuram, Tamil Nadu, India. I enjoy applying theoretical knowledge to real-world scenarios and am passionate about cloud computing and contingency planning. My favorite food is fish curry, and I love traveling, photography, and dancing. Currently, I’m an international student in Canada, excited to explore diverse cultures and expand my horizons.</p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Looking forward to contributing my skills and learning from new opportunities! 😊</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript for Tab Functionality -->
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabContent, tabButtons;
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("active");
+            }
+            tabButtons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>

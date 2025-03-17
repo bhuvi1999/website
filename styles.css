@@ -1,0 +1,195 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ff6f61;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ff6f61; /* Coral */
+    margin-bottom: 10px;
+}
+
+.top-nav {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.top-nav a {
+    color: #3b82f6; /* Blue */
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    background-color: #dbeafe; /* Light blue */
+    border-radius: 5px;
+}
+
+.top-nav a:hover {
+    background-color: #bfdbfe;
+    text-decoration: underline;
+}
+
+/* Tabs */
+.tabs {
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #f1f1f1;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 1em;
+    color: #333;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-button.active {
+    background-color: #ff6f61; /* Coral */
+    color: #fff;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    background-color: #fff;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #ff6f61; /* Coral */
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-top: 15px;
+}
+
+p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+ul li {
+    margin: 8px 0;
+    position: relative;
+}
+
+ul li:before {
+    content: "•";
+    color: #ff6f61; /* Coral */
+    font-size: 1.2em;
+    position: absolute;
+    left: -15px;
+}
+
+a {
+    color: #3b82f6; /* Blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Experience and Education Items */
+.exp-item, .edu-item {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1em;
+    color: #555;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .top-nav {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .tab-button {
+        padding: 10px 12px;
+        font-size: 0.9em;
+        float: none;
+        display: inline-block;
+    }
+
+    .tabs {
+        text-align: center;
+    }
+}
